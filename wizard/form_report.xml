@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="wizard_form_report">
+        <field name="name">wizard.form.report</field>
+        <field name="model">form.report</field>
+        <field name="arch" type="xml">
+            <form string="Reporte productos cero stock">
+                <group>
+                    <group>
+                        <field name="date_init"/>
+                        <field name="date_end"/>
+                        <field name="location_ids"/>
+                        <field name="location"/>
+                        <field name="product_ids" widget="many2many_tags"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="generate_report" string="Aceptar" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

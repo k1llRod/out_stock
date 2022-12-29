@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_product_zero_xlsx" model="ir.actions.report">
+        <field name="name">Producto zero</field>
+        <field name="model">form.report</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">out_of_stock.report_product_zero_xls</field>
+        <field name="report_file">out_of_stock.report_product_zero_xls</field>
+        <field name="binding_type">report</field>
+    </record>
+<!--    <report-->
+<!--        id="report_product_product_xlx"-->
+<!--        string="Reporte de productos cero stock"-->
+<!--        model="product.product"-->
+<!--        report_type="xlsx"-->
+<!--        name="product_product.report_product_product_xls"-->
+<!--        file="account_asset.report_product_product_xls"-->
+<!--        attachment_use="False"/>-->
+</odoo>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wizard_form_report,form.report,model_form_report,base.group_user,1,1,1,1
+access_register_zeros,register.zeros,model_register_zeros,base.group_user,1,1,1,1

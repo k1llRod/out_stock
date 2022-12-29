@@ -1,0 +1,67 @@
+<odoo>
+    <data>
+        <!-- Vista Árbol de Modelo Log de producto cero stock -->
+
+        <record model="ir.ui.view" id="register_zeros_tree">
+            <field name="name">register.zeros.tree</field>
+            <field name="model">register.zeros</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="products_id"/>
+                    <field name="product_qty"/>
+                    <field name="location_id"/>
+                    <field name="date_init"/>
+                    <field name="date_end"/>
+                    <field name="product_qty_end"/>
+                    <field name="total_days"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vista Formulario  -->
+
+        <record model="ir.ui.view" id="register_zeros_form">
+            <field name="name">register.zeros.form</field>
+            <field name="model">register.zeros</field>
+            <field name="arch" type="xml">
+                <form string="Log de productos cero stock" duplicate="0">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="products_id"/>
+                            </group>
+                            <group>
+                                <field name="product_qty"/>
+                            </group>
+                            <group>
+                                <field name="location_id"/>
+                            </group>
+                            <group>
+                                <field name="date_init" />
+                            </group>
+                            <group>
+                                <field name="date_end" />
+                            </group>
+                            <group>
+                                <field name="product_qty_end" />
+                            </group>
+                            <group>
+                                <field name="total_days"/>
+                            </group>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Accion para visualizar log de stock cero -->
+
+        <record id="register_zeros_action" model="ir.actions.act_window">
+            <field name="name">Log de productos cero stock</field>
+            <field name="res_model">register.zeros</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
